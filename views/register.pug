@@ -1,0 +1,26 @@
+extends layout
+block content
+  h1 Register
+   form(method='post' action='/user/register')
+    label Name:
+    br
+    input(name='name',type='text')
+    br
+    label E-mail:
+    br
+    input(name='email',type='text')
+    br
+    label Username:
+    br
+    input(name='username',type='text')
+    br
+    label Password:
+    br
+    input(name='password',type='password')
+    br
+    label Confirm-Password:
+    br
+    input(name='conpassword',type='password')
+    br
+    br
+    input(type='submit',value='Submit')

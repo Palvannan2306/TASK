@@ -1,0 +1,17 @@
+extends layout
+block content
+  h1 #{add}
+   form(method='post' action='/article/edit/'+arti._id)
+    label Title:
+    br
+    input(name='title',type='text' value=arti.title)
+    br
+    label Author:
+    br
+    input(name='author',type='text' value=arti.author)
+    br
+    label Body:
+    br
+    textarea(name='body' type='text') #{arti.body}
+    br
+    input(type='submit',value='Submit')

@@ -1,0 +1,13 @@
+extends layout
+block content
+  h1 #{add}
+   form(method='post' action='/article/add')
+    label Title:
+    br
+    input(name='title',type='text')
+    br
+    label Body:
+    br
+    textarea(name='body',type='text')
+    br
+    input(type='submit',value='Submit')

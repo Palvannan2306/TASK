@@ -1,0 +1,10 @@
+extends layout
+block content
+
+ h1=arti.title
+ h5 Written by #{author}
+  p=arti.body
+
+  br
+
+  a(href='/article/edit/'+arti._id) Edit

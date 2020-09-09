@@ -1,0 +1,9 @@
+extends layout
+block content
+
+  h1 #{title}
+   
+   each article, i in articles
+     br
+     a(href="/article/"+article.id)=article.title
+

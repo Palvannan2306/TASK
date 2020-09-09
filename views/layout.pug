@@ -1,0 +1,23 @@
+doctype html
+html
+ head
+  title my project
+  link(rel='stylesheet' href='/Boot/style.css')
+ body
+  div.icon-bar
+    
+    a(href='/') Home
+    a(href='/article/add') Add article
+    if user
+        a(href='/user/logout') Logout
+    else
+         a(href='/user/login') Login
+         a(href='/user/register') Register
+ 
+  .container
+    != messages('message',locals)
+    block content
+    br
+    hr
+    footer
+      p Copyright @ 2020
